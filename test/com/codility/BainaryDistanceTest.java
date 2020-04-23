@@ -15,5 +15,15 @@ class BainaryDistanceTest {
 	void secondTest() {
 		assertEquals(8, BainaryDistance.getBainaryDistanceDivitByTwo(32835));
 	}
+	
+	@Test
+	void firstTestUsingString() {
+		assertEquals(4, BainaryDistance.getBinDisntcString(1058));
+	}
+
+	@Test
+	void secondTestUsingString() {
+		assertEquals(8, BainaryDistance.getBinDisntcString(32835));
+	}
 
 }
