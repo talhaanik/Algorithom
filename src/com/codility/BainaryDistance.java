@@ -40,6 +40,28 @@ public class BainaryDistance {
 
 		return max;
 	}
+	public static int log(int x, int base)
+	{
+	    return (int) (Math.log(x) / Math.log(base));
+	}
+	public static int masureGapUsingLog(int num) {
+		
+		int max=0;
+		int pp=0;
+		while(num>0) {
+			int numPow=log(num,2);
+			int dis=pp-numPow-1;
+			if(dis>max) {
+				max=dis;
+			}
+			pp=numPow;
+			
+			int cnum=(int) Math.pow((double) 2, (double) numPow);
+			num=num-cnum;
+			
+		}
+		return max;
+	}
 
 	public static void main(String[] args) {
 
